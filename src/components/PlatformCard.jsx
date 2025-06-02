@@ -1,4 +1,13 @@
-const PlatformCard = ({ platformIcon, username, total, tag, icon, todayTotal, className }) => {
+const baseImagePath = import.meta.env.BASE_URL;
+const PlatformCard = ({
+  platformIcon,
+  username,
+  total,
+  tag,
+  icon,
+  todayTotal,
+  className,
+}) => {
   return (
     <div
       className={`hover:bg-cardHoverLight hover:dark:bg-cardHoverDark relative cursor-pointer flex items-center justify-center text-center flex-col gap-[1lh] bg-lightGrayishBlue dark:bg-darkDesaturatedBlue py-8 rounded-sm ${className}`}
@@ -21,7 +30,7 @@ const PlatformCard = ({ platformIcon, username, total, tag, icon, todayTotal, cl
         <img src={icon} alt={icon} />
         <p
           className={`${
-            icon === "/icon-up.svg" ? "text-limeGreen" : "text-brightRed"
+            icon === `${baseImagePath}icon-up.svg` ? "text-limeGreen" : "text-brightRed"
           } text-xs font-700`}
         >
           {todayTotal}
@@ -29,6 +38,6 @@ const PlatformCard = ({ platformIcon, username, total, tag, icon, todayTotal, cl
       </div>
     </div>
   );
-}
+};
 
 export default PlatformCard;

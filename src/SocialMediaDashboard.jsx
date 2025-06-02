@@ -192,7 +192,7 @@ const SocialMediaDashboard = () => {
               tag="Likes"
               platform={youtube.icon}
               total="107"
-              icon={`${baseImagePath}icon-up.svg`}
+              icon={`${baseImagePath}icon-down.svg`}
               percentage="19%"
             />
             <OverviewCard
