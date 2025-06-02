@@ -4,40 +4,40 @@ import PlatformCard from "./components/PlatformCard";
 import OverviewCard from "./components/OverviewCard";
 import { PiToggleLeftFill } from "react-icons/pi";
 import { LiaToggleOnSolid } from "react-icons/lia";
-
+const baseImagePath = import.meta.env.BASE_URL;
 const facebook = {
-  icon: "/icon-facebook.svg",
+  icon: `${baseImagePath}icon-facebook.svg`,
   username: "@nathanf",
   total: 1987,
   tag: "followers",
-  currentFollowsIcon: "/icon-up.svg",
+  currentFollowsIcon: `${baseImagePath}icon-up.svg`,
   today: "12 Today",
 };
 
 const twitter = {
-  icon: "/icon-twitter.svg",
+  icon: `${baseImagePath}icon-twitter.svg`,
   username: "@nathanf",
   total: 1044,
   tag: "followers",
-  currentFollowsIcon: "/icon-up.svg",
+  currentFollowsIcon: `${baseImagePath}icon-up.svg`,
   today: "99 Today",
 };
 
 const instagram = {
-  icon: "/icon-instagram.svg",
+  icon: `${baseImagePath}icon-instagram.svg`,
   username: "@realnathanf",
   total: "11k",
   tag: "followers",
-  currentFollowsIcon: "/icon-up.svg",
+  currentFollowsIcon: `${baseImagePath}icon-up.svg`,
   today: "1099 Today",
 };
 
 const youtube = {
-  icon: "/icon-youtube.svg",
+  icon: `${baseImagePath}icon-youtube.svg`,
   username: "Nathan F.",
   total: 8239,
   tag: "subscribers",
-  currentFollowsIcon: "/icon-down.svg",
+  currentFollowsIcon: `${baseImagePath}icon-down.svg`,
   today: "144 Today",
 };
 
@@ -152,7 +152,7 @@ const SocialMediaDashboard = () => {
               tag="Likes"
               platform={facebook.icon}
               total="52"
-              icon="/icon-down.svg"
+              icon={`${baseImagePath}icon-down.svg`}
               percentage="2%"
             />
 
@@ -160,7 +160,7 @@ const SocialMediaDashboard = () => {
               tag="Likes"
               platform={instagram.icon}
               total="5462"
-              icon="/icon-up.svg"
+              icon={`${baseImagePath}icon-up.svg`}
               percentage="2257%"
             />
 
@@ -168,7 +168,7 @@ const SocialMediaDashboard = () => {
               tag="Profile Views"
               platform={instagram.icon}
               total="52k"
-              icon="/icon-up.svg"
+              icon={`${baseImagePath}icon-up.svg`}
               percentage="1375%"
             />
 
@@ -176,7 +176,7 @@ const SocialMediaDashboard = () => {
               tag="Retweets"
               platform={twitter.icon}
               total="117"
-              icon="/icon-up.svg"
+              icon={`${baseImagePath}icon-up.svg`}
               percentage="303%"
             />
 
@@ -184,7 +184,7 @@ const SocialMediaDashboard = () => {
               tag="Likes"
               platform={twitter.icon}
               total="507"
-              icon="/icon-up.svg"
+              icon={`${baseImagePath}icon-up.svg`}
               percentage="553%"
             />
 
@@ -192,14 +192,14 @@ const SocialMediaDashboard = () => {
               tag="Likes"
               platform={youtube.icon}
               total="107"
-              icon="/icon-down.svg"
+              icon={`${baseImagePath}icon-up.svg`}
               percentage="19%"
             />
             <OverviewCard
               tag="Total Views"
               platform={youtube.icon}
               total="1407"
-              icon="/icon-down.svg"
+              icon={`${baseImagePath}icon-down.svg`}
               percentage="12%"
             />
           </div>

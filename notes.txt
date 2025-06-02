@@ -92,3 +92,102 @@ Social Media Dashboard
     currentFollows: "144 Today",
   },
 };
+
+// ...existing code...
+import { LiaToggleOnSolid } from "react-icons/lia";
+
+const baseImagePath = import.meta.env.BASE_URL;
+
+const facebook = {
+  icon: `${baseImagePath}icon-facebook.svg`,
+  username: "@nathanf",
+  total: 1987,
+  tag: "followers",
+  currentFollowsIcon: `${baseImagePath}icon-up.svg`,
+  today: "12 Today",
+};
+
+const twitter = {
+  icon: `${baseImagePath}icon-twitter.svg`,
+  username: "@nathanf",
+  total: 1044,
+  tag: "followers",
+  currentFollowsIcon: `${baseImagePath}icon-up.svg`,
+  today: "99 Today",
+};
+
+const instagram = {
+  icon: `${baseImagePath}icon-instagram.svg`,
+  username: "@realnathanf",
+  total: "11k",
+  tag: "followers",
+  currentFollowsIcon: `${baseImagePath}icon-up.svg`,
+  today: "1099 Today",
+};
+
+const youtube = {
+  icon: `${baseImagePath}icon-youtube.svg`,
+  username: "Nathan F.",
+  total: 8239,
+  tag: "subscribers",
+  currentFollowsIcon: `${baseImagePath}icon-down.svg`,
+  today: "144 Today",
+};
+
+const SocialMediaDashboard = () => {
+// ...existing code...
+            <OverviewCard
+              tag="Likes"
+              platform={facebook.icon}
+              total="52"
+              icon={`${baseImagePath}icon-down.svg`}
+              percentage="2%"
+            />
+
+            <OverviewCard
+              tag="Likes"
+              platform={instagram.icon}
+              total="5462"
+              icon={`${baseImagePath}icon-up.svg`}
+              percentage="2257%"
+            />
+
+            <OverviewCard
+              tag="Profile Views"
+              platform={instagram.icon}
+              total="52k"
+              icon={`${baseImagePath}icon-up.svg`}
+              percentage="1375%"
+            />
+
+            <OverviewCard
+              tag="Retweets"
+              platform={twitter.icon}
+              total="117"
+              icon={`${baseImagePath}icon-up.svg`}
+              percentage="303%"
+            />
+
+            <OverviewCard
+              tag="Likes"
+              platform={twitter.icon}
+              total="507"
+              icon={`${baseImagePath}icon-up.svg`}
+              percentage="553%"
+            />
+
+            <OverviewCard
+              tag="Likes"
+              platform={youtube.icon}
+              total="107"
+              icon={`${baseImagePath}icon-down.svg`}
+              percentage="19%"
+            />
+            <OverviewCard
+              tag="Total Views"
+              platform={youtube.icon}
+              total="1407"
+              icon={`${baseImagePath}icon-down.svg`}
+              percentage="12%"
+            />
+// ...existing code...
