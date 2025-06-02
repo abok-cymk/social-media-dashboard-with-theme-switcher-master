@@ -2,11 +2,14 @@
   "name": "social-media-dashboard-with-theme-switcher-master",
   "version": "1.0.0",
   "description": "Social media dashboard with theme switcher challenge on Frontend Mentor",
+  "homepage": "https://abok-cymk.github.io/social-media-dashboard-with-theme-switcher-master",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Abok Allan",
@@ -27,6 +30,7 @@
     "eslint": "^9.28.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
     "globals": "^16.2.0",
     "tailwindcss": "^4.1.8",
     "vite": "^6.3.5"
