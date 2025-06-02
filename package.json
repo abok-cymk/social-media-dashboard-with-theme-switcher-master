@@ -2,7 +2,6 @@
   "name": "social-media-dashboard-with-theme-switcher-master",
   "version": "1.0.0",
   "description": "Social media dashboard with theme switcher challenge on Frontend Mentor",
-  "homepage": "https://abok-cymk.github.io/social-media-dashboard-with-theme-switcher-master",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
